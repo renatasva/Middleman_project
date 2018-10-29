@@ -1,0 +1,14 @@
+---
+title: Le Wagon - Team
+---
+
+<div class="content">
+  <ul class="list-inline text-center">
+    <% %w(ssaunier papillard).each do |user| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user}", class: "img-circle", height: "150px" %>
+      <h3><%= user.capitalize %></h3>
+    </li>
+    <% end %>
+  </ul>
+</div>
